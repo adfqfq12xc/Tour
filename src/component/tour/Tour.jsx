@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, lazy } from "react";
 import "./tour.scss";
 import { UserContext } from '../../usercontext';
 
@@ -25,7 +25,7 @@ const [hiden,sethiden]=useState(false)
   return (
     <article  className="tour" hidden={hiden}>
       <div className="img-container">
-        <img src={Image} alt={tour.city} />
+        <img src={Image} alt={tour.city} onLoad={lazy}/>
         <span className="close-button">
           {user && <i className="fas fa-window-close" onClick={()=>{      
                  sethiden(true)
