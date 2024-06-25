@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background: url(https://images.unsplash.com/photo-1622667042273-e0e54442440a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.container > form {
+    width: 40vw;
+    height: auto; /* Adjust height to auto for flexibility */
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+
+}
+
+.input {
+    width: 80% ; /* Full width minus margins */
+    padding: 10px;
+    margin: 1rem;
+    border-radius: 5px; /* Adjusted border-radius for better appearance */
+    border: 1px solid #ccc; /* Added border for input fields */
+display: block;
+}
+
+.buttonsub {
+    background: #05b462 !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+margin: auto;
+    color: #fff; /* Added text color */
+    border: none; /* Removed border */
+    cursor: pointer; /* Added pointer cursor */
+}
+
+button:hover {
+    background: #04a456; /* Slightly darker green on hover */
+}
+
+h1 {
+    text-align: center; /* Centered heading */
+}
+
+label {
+    margin-left: 1rem; /* Aligned labels with input margins */
+    font-weight: bold; /* Made labels bold */
+}
+
+.field {
+    margin-bottom: 1rem; /* Added spacing between fields */
+}
+
+.ui.divider {
+    margin: 1rem 0; /* Spacing for divider */
+}
+.error-message{
+    color: red;
+    display: flex;
+    justify-content: center;
+}

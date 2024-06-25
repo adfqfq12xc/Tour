@@ -1,0 +1,23 @@
+.containeradd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1622667042273-e0e54442440a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+input{
+    width: 50vw;
+    color: black;
+}
+button{
+    width: 50vh;
+    display: block;
+}
+.containerform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}

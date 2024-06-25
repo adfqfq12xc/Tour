@@ -1,0 +1,20 @@
+    .tourlist{
+
+        margin: 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: auto auto  ;
+        gap: 20px;
+        grid-template-rows:1 ;
+
+
+
+
+    }
+    @media screen and (max-width:768px) {
+        .tourlist{
+            grid-template-columns: repeat(2,1fr);
+
+        }
+        
+    }

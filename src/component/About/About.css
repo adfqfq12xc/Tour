@@ -1,0 +1,66 @@
+h1{
+    margin: 3rem;
+    color: white;
+}
+
+.wraping{
+    display: flex;
+    flex-direction: row;
+}
+.aboutPage{
+    background-color: rgba(0, 0, 0, 0.753); 
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.containerabout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutcontains {
+  
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(43, 122, 226);
+
+}
+
+.aboutcontains img {
+    max-width: 50%;
+    display: flex;
+    justify-content: start;
+    height: auto;
+    display: inline;
+    height: 100%;
+    
+}
+
+.text1 {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.text2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.text3{
+    margin: 0.5rem 0;
+    display: block;
+    font-size: 18px;
+
+}

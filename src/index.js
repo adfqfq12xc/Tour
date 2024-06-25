@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React, { useState } from 'react';
+import { createRoot } from 'react-dom/client'; // Import createRoot from react-dom/client
+import './index.scss';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { UserContext } from "./usercontext";
+const Root = () => {
+  const [user, setUser] = useState(null); // State for user
+  const [data, setData] = useState(null); // State for data
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  return (
+    <UserContext.Provider value={{ user, setUser, data, setData }}>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      <App />
+    </UserContext.Provider>
+  );
+};
+
+// Render the Root component using createRoot from react-dom/client
+const root = createRoot(document.getElementById('root'));
+root.render(<Root />);
